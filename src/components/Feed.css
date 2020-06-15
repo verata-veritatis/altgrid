@@ -264,7 +264,10 @@ input:focus {
         width: 100%;
     }
     .Box {
-        width: 46vw;
-        height: 30vh;
+        width: 45vw;
+        height: 25vh;
+    }
+    .Price {
+        font-size: 150%;
     }
 }
