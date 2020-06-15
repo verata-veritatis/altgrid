@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/altgrid/static/css/main.60995c19.chunk.css",
+    "main.js": "/altgrid/static/js/main.3712a66d.chunk.js",
+    "main.js.map": "/altgrid/static/js/main.3712a66d.chunk.js.map",
+    "runtime-main.js": "/altgrid/static/js/runtime-main.65d0a62d.js",
+    "runtime-main.js.map": "/altgrid/static/js/runtime-main.65d0a62d.js.map",
+    "static/js/2.fe10ddfc.chunk.js": "/altgrid/static/js/2.fe10ddfc.chunk.js",
+    "static/js/2.fe10ddfc.chunk.js.map": "/altgrid/static/js/2.fe10ddfc.chunk.js.map",
+    "index.html": "/altgrid/index.html",
+    "precache-manifest.a0408e977538192a181f70b6e57db216.js": "/altgrid/precache-manifest.a0408e977538192a181f70b6e57db216.js",
+    "service-worker.js": "/altgrid/service-worker.js",
+    "static/css/main.60995c19.chunk.css.map": "/altgrid/static/css/main.60995c19.chunk.css.map",
+    "static/js/2.fe10ddfc.chunk.js.LICENSE.txt": "/altgrid/static/js/2.fe10ddfc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65d0a62d.js",
+    "static/js/2.fe10ddfc.chunk.js",
+    "static/css/main.60995c19.chunk.css",
+    "static/js/main.3712a66d.chunk.js"
+  ]
+}
