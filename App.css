@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800;900&display=swap');
+
+:root {
+  --transform-font-time: 0.4s
+}
+
+.App {
+  text-align: center;
+}
+
+.Container {
+  opacity: 0;
+  transition: 2s opacity;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Logo {
+  position: fixed;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.2;
+  font-size: 40px;
+  font-family: 'MuseoModerno', cursive;
+  -webkit-transition: all var(--transform-font-time) ease-in-out;
+  -moz-transition: all var(--transform-font-time) ease-in-out;
+  -o-transition: all var(--transform-font-time) ease-in-out;
+  transition: all var(--transform-font-time) ease-in-out;
+}
+
+.Logo:hover {
+  opacity: 0.8;
+  -webkit-transition: all var(--transform-font-time) ease-in-out;
+  -moz-transition: all var(--transform-font-time) ease-in-out;
+  -o-transition: all var(--transform-font-time) ease-in-out;
+  transition: all var(--transform-font-time) ease-in-out;
+}
+
+.Left {
+  left: 25px;
+  bottom: 10px;
+}
+
+.Right {
+  right: 10px;
+  bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+@media (max-width:1200px){
+  .Left {
+      opacity: 0;
+      pointer-events: none;
+  }
+  .Right {
+      left: 20px;
+  }
+  .Right img {
+    width: 50%;
+  }
+}

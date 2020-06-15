@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --transform-scale-time: 0.35s;
+    --transform-border-time: 0.2s;
+    --transform-name-time: 0.6s;
+  }
+
+.Section {
+    width: 50%;
+}
+
+.Grid {
+    padding-top: 12px;
+    opacity: 0;
+    transition-delay: 4s;
+    transition: 4s opacity;
+}
+
+.Fixed {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    left: 50%;
+    position: fixed;
+    border-left: 0.3vw solid rgb(255, 255, 255, 0.05);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Chart {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Title {
+    padding-top: 5%;
+    margin-bottom: -12%;
+    font-family: 'Yantramanav', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 700;
+    font-size: 70%;
+}
+
+.Plot {
+    height: 60%;
+    padding: 2%;
+}
+
+.Info {
+    margin-top: -6%;
+    height: 40%;
+    display: flex;
+}
+
+.Box {
+    width: 23vw;
+    height: 15vw;
+    border: 0.3vw solid rgb(255, 255, 255, 0.05);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 5px;
+    font-family: 'Yantramanav', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    -webkit-transition: transform var(--transform-scale-time) ease-in-out, border var(--transform-border-time) ease-in-out;
+    -moz-transition: transform var(--transform-scale-time) ease-in-out, border var(--transform-border-time) ease-in-out;
+    -o-transition: transform var(--transform-scale-time) ease-in-out, border var(--transform-border-time) ease-in-out;
+    transition: transform var(--transform-scale-time) ease-in-out, border var(--transform-border-time) ease-in-out;
+}
+
+.Box:hover {
+    transform: scale(1.1);
+    border: 0.3vw solid rgb(255, 255, 255, 0.8);
+    -webkit-transition: transform var(--transform-scale-time) ease-in-out, border var(--transform-border-time) ease-in-out;
+    -moz-transition: transform var(--transform-scale-time) ease-in-out, border var(--transform-border-time) ease-in-out;
+    -o-transition: transform var(--transform-scale-time) ease-in-out, border var(--transform-border-time) ease-in-out;
+    transition: transform var(--transform-scale-time) ease-in-out, border var(--transform-border-time) ease-in-out;
+}
+
+.Box:hover .Name {
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all var(--transform-name-time) ease-in-out;
+    -moz-transition: all var(--transform-name-time) ease-in-out;
+    -o-transition: all var(--transform-name-time) ease-in-out;
+    transition: all var(--transform-name-time) ease-in-out;
+}
+
+.Box:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Logo {
+    width: 50%;
+    max-width: 10%;
+}
+
+.Name {
+    height: 10%;
+    width: 100%;
+    font-weight: 700;
+    font-size: 65%;
+    color: rgba(255, 255, 255, 0.2);
+    margin-top: 10px;
+    -webkit-transition: all var(--transform-name-time) ease-in-out;
+    -moz-transition: all var(--transform-name-time) ease-in-out;
+    -o-transition: all var(--transform-name-time) ease-in-out;
+    transition: all var(--transform-name-time) ease-in-out;
+}
+
+.Price {
+    height: 30%;
+    width: 100%;
+    font-weight: 700;
+    font-size: 200%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: -5px;
+}
+
+.Spacer {
+    height: 5%;
+}
+
+.Designator {
+    height: 5%;
+    font-weight: 700;
+    font-size: 50%;
+}
+
+.Box:hover .Designator {
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all var(--transform-name-time) ease-in-out;
+    -moz-transition: all var(--transform-name-time) ease-in-out;
+    -o-transition: all var(--transform-name-time) ease-in-out;
+    transition: all var(--transform-name-time) ease-in-out;
+}
+
+.Data {
+    font-size: 70%;
+}
+
+.Ask {
+    color: rgb(145, 80, 80);
+}
+
+.Bid {
+    color: rgba(113, 168, 128, 1);
+}
+
+.Field {
+    padding: 10px 10px 20px 10px;
+}
+
+.Submit {
+    height: 20%;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.Submit input {
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.Buy input {
+    background-color: rgb(90, 166, 111, 1);
+    -webkit-transition: all var(--transform-scale-time) ease-in-out;
+    -moz-transition: all var(--transform-scale-time) ease-in-out;
+    -o-transition: all var(--transform-scale-time) ease-in-out;
+    transition: all var(--transform-scale-time) ease-in-out;
+}
+
+.Sell input {
+    background-color: rgb(131, 60, 60, 1);
+    -webkit-transition: all var(--transform-scale-time) ease-in-out;
+    -moz-transition: all var(--transform-scale-time) ease-in-out;
+    -o-transition: all var(--transform-scale-time) ease-in-out;
+    transition: all var(--transform-scale-time) ease-in-out;
+}
+
+.Buy input:hover {
+    background-color: rgb(90, 166, 111, 0.5);
+    -webkit-transition: all var(--transform-scale-time) ease-in-out;
+    -moz-transition: all var(--transform-scale-time) ease-in-out;
+    -o-transition: all var(--transform-scale-time) ease-in-out;
+    transition: all var(--transform-scale-time) ease-in-out;
+}
+
+.Sell input:hover {
+    background-color: rgb(131, 60, 60, 0.5);
+    -webkit-transition: all var(--transform-scale-time) ease-in-out;
+    -moz-transition: all var(--transform-scale-time) ease-in-out;
+    -o-transition: all var(--transform-scale-time) ease-in-out;
+    transition: all var(--transform-scale-time) ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+form {
+    width: 50%;
+    font-weight: 700;
+    font-size: 50%;
+    color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: all var(--transform-name-time) ease-in-out;
+    -moz-transition: all var(--transform-name-time) ease-in-out;
+    -o-transition: all var(--transform-name-time) ease-in-out;
+    transition: all var(--transform-name-time) ease-in-out;
+}
+
+label {
+    width: 100%;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.02);
+    font-family: 'Yantramanav', sans-serif;
+    width: 70%;
+    font-weight: 700;
+    font-size: 120%;
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(255, 255, 255, 0.04);
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width:1200px){
+    .Fixed {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .Section {
+        width: 100%;
+    }
+}
+
+@media (max-width:1080px){
+    .Fixed {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .Section {
+        width: 100%;
+    }
+    .Box {
+        width: 46vw;
+        height: 30vh;
+    }
+}
