@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/altgrid/precache-manifest.a0408e977538192a181f70b6e57db216.js"
+  "/altgrid/precache-manifest.e0289895e7ee99333bf298064753f0d9.js"
 );
 
 self.addEventListener('message', (event) => {

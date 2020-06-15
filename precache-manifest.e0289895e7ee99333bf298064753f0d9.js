@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b43fe58b2db6d2b98defe1807d76b909",
+    "revision": "e3ed70faf41fbcf0ee963ac96c77e8cf",
     "url": "/altgrid/index.html"
   },
   {
-    "revision": "4fe5f65997cd283342b2",
-    "url": "/altgrid/static/css/main.60995c19.chunk.css"
+    "revision": "3ec7260e94c8872e7fb8",
+    "url": "/altgrid/static/css/main.03d4c270.chunk.css"
   },
   {
     "revision": "6e6208acaadc9c6676f9",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/altgrid/static/js/2.fe10ddfc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4fe5f65997cd283342b2",
+    "revision": "3ec7260e94c8872e7fb8",
     "url": "/altgrid/static/js/main.3712a66d.chunk.js"
   },
   {
