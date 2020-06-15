@@ -1,22 +1,25 @@
 {
-  "homepage": "http://verata-veritatis.github.io/altgrid",
-  "name": "altgrid",
+  "name": "hello-world",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "apexcharts": "^3.19.2",
     "lodash": "^4.17.15",
     "react": "^16.13.1",
+    "react-alert": "^7.0.1",
+    "react-alert-template-basic": "^1.0.0",
     "react-apexcharts": "^1.3.7",
     "react-dom": "^16.13.1",
     "react-fade-in": "^1.1.0",
-    "react-scripts": "3.4.1"
+    "react-redux": "^7.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "websocket": "^1.0.31"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,7 +41,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.0.0",
-    "install": "^0.13.0"
+    "gh-pages": "^3.0.0"
   }
 }

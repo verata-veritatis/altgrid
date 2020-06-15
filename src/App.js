@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Feed from './components/Feed';
+import binance_logo from './img/binance_logo.png';
 import './App.css';
+import { logDOM } from '@testing-library/react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+class App extends Component {
+
+  componentDidMount() {
+    document.querySelector('.Container').classList.add('fade-in');
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Feed />
+      <div className="Logo Left">
+        <a href="http://www.binance.com"><img src={binance_logo}></img></a>
+      </div>
+      <div className="Logo Right">
+        <a href="https://www.github.com/verata-veritatis">
+          altgrid
         </a>
-      </header>
-    </div>
-  );
+      </div>
+      </div>
+    );
+  }
 }
 
 export default App;

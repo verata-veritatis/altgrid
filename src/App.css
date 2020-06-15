@@ -1,38 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800;900&display=swap');
+
+:root {
+  --transform-font-time: 0.4s
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container {
+  opacity: 0;
+  transition: 2s opacity;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Logo {
+  position: fixed;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.2;
+  font-size: 40px;
+  font-family: 'MuseoModerno', cursive;
+  -webkit-transition: all var(--transform-font-time) ease-in-out;
+  -moz-transition: all var(--transform-font-time) ease-in-out;
+  -o-transition: all var(--transform-font-time) ease-in-out;
+  transition: all var(--transform-font-time) ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Logo:hover {
+  opacity: 0.8;
+  -webkit-transition: all var(--transform-font-time) ease-in-out;
+  -moz-transition: all var(--transform-font-time) ease-in-out;
+  -o-transition: all var(--transform-font-time) ease-in-out;
+  transition: all var(--transform-font-time) ease-in-out;
+}
+
+.Left {
+  left: 25px;
+  bottom: 10px;
+}
+
+.Right {
+  right: 10px;
+  bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+@media (max-width:1200px){
+  .Left {
+      opacity: 0;
+      pointer-events: none;
   }
-  to {
-    transform: rotate(360deg);
+  .Right {
+      left: 20px;
+  }
+  .Right img {
+    width: 50%;
   }
 }
