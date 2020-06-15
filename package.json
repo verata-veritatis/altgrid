@@ -1,5 +1,6 @@
 {
-  "name": "hello-world",
+  "homepage": "http://verata-veritatis.github.io/altgrid",
+  "name": "altgrid",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +21,8 @@
     "websocket": "^1.0.31"
   },
   "scripts": {
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
